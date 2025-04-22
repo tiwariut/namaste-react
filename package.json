@@ -1,0 +1,21 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React!",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Utkarsh Tiwari",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

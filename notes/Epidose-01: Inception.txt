@@ -1,0 +1,1 @@
+1. React.element returns an object (not HTML)

@@ -1,0 +1,28 @@
+1. NPM does not have a full form.
+2. package.json is a configuration for npm.
+3. ^ caret will update your package if there is a minor update to the library (safe and recommended).
+4. ~ tilde will update your package if there is a major update to the library.
+5. package-lock.json keeps track of the exact version of packages installed. 
+6. package.json keeps track of the approx version of packages installed (uses caret or tilde).ß
+7. TRANSITIVE DEPENDENCIES: A library may have several dependencies, those dependencies may have several dependencies and so on. That is why node_modules is so huge.
+----------
+1. npm is used for installing packages while npx is used for executing packages.
+2. CDN links are nor the preferred way to use React in our projects.
+3. Parcel handles following:
+  a. Dev build
+  b. Local server
+  c. HMR (Hot Module Replacement) || Hot reloading
+  d. File watching algorithm - written in C++ for hot reloading
+  e. Caching - faster builds
+  f. Image optimization
+  g. Minification
+  h. Bundling
+  i. Compression
+  f. Consistent hashing
+  g. Code splitting
+  h. Differential bundling - support older browsers
+  i. Diagnostic
+  j. Error handling
+  k. HTTPs
+  l. Tree shaking - remove unused code
+  m. Different dev and prod bundles
