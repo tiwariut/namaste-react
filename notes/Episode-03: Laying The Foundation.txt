@@ -1,0 +1,5 @@
+1. JSX is not html inside JS. It's HTML like syntax (or XML like).
+2. JSX is transpiled before it reached the browser by Babel (managed by Parcel) 
+3. JSX => React.createElement => ReactElement - JS Object => HTMLElement(render)
+4. Components composition -> Components inside components
+5. JSX sanitizes the code that we pass inside {}, preventing XSS attacks. 

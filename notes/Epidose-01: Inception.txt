@@ -1,1 +1,2 @@
-1. React.element returns an object (not HTML)
+1. React.element returns an object (also called React element), not HTML.
+2. ReactDOM will replace, not append everything inside the selected element.
