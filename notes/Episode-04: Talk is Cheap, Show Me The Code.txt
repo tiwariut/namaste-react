@@ -1,0 +1,2 @@
+1. Config driven UI -> wesite driven by configs/data. The config comes from backend.
+2. Never use indexes for keys if the order on items may change (not a good practice, mentioned on React docs).
