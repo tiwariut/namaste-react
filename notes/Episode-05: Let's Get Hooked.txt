@@ -1,0 +1,16 @@
+1. There are two types of export - default and named
+2. React (and all the other frameworks) are trying to solve the problem of keeping the data and UI layer in sync.
+3. React Hooks are normal JS utility functions.
+4. Whenever a state variable updates, React re-renders the component.
+5. react makes DOM operations super fast and efficient. React is only good at DOM manipulation.
+6. React does efficient DOM manipulation because it has a virtual DOM. That is why it is so fast.
+7. React Fiber
+  a. React uses a reconciliation algorithm, called React Fiber (introduced in React 16).
+  b. Virtual DOM is representation of an actual DOM (The React elements that look like JS objects are Virtual DOMs).
+  c. Diff algorithm finds the difference between the updated virtual DOM and the previous virtual DOM.
+  d. After getting the difference, the actual DOM will be updated.
+  e. React Fiber is the new way of finding the diff and updating the DOM.
+  f. This is faster as finding out the difference between two JS objects is faster than finding out the difference between HTML code.
+  e. React does not touches the actual DOM a lot, thus it is fast.
+  f. React uses incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
+  g. The concept of Virtual DOM  has existed since a long time, before React.
