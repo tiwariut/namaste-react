@@ -1,7 +1,23 @@
-import React from 'react';
+import { Component } from 'react';
 
-const About = () => {
-  return <div>About</div>;
-};
+import User from './User';
+import UserClass from './UserClass';
+
+class About extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {}
+
+  render() {
+    return (
+      <div>
+        <h1>About</h1>
+        <UserClass name={'Utkarsh'} />
+      </div>
+    );
+  }
+}
 
 export default About;
