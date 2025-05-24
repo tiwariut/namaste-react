@@ -27,15 +27,16 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className='body'>
-      <div className='filter'>
-        <div className='search'>
+      <div className='flex'>
+        <div className='search m-4 p-4'>
           <input
             type='text'
-            className='search-box'
+            className='border border-solid border-black'
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
+            className='px-4 py-2 bg-green-100 m-4 rounded-lg'
             onClick={() => {
               const filteredRestaurant = listOfRestaurant.filter((restaurant) =>
                 restaurant.info.name
@@ -49,25 +50,27 @@ const Body = () => {
             Search
           </button>
         </div>
-        <button
-          onClick={() => {
-            const filteredList = listOfRestaurant.filter(
-              (restaurant) => restaurant.info.avgRating > 4.3
-            );
-            setFilteredListOfRestaurant(filteredList);
-          }}
-          className='filter-btn'
-        >
-          Top Rated Restaurant
-        </button>
-        <button
-          className='filter-btn'
-          onClick={() => setFilteredListOfRestaurant(listOfRestaurant)}
-        >
-          Remove Filters
-        </button>
+        <div className='m-4 p-4'>
+          <button
+            className='px-4 py-2 bg-green-100 m-4 rounded-lg'
+            onClick={() => {
+              const filteredList = listOfRestaurant.filter(
+                (restaurant) => restaurant.info.avgRating > 4.3
+              );
+              setFilteredListOfRestaurant(filteredList);
+            }}
+          >
+            Top Rated Restaurant
+          </button>
+          <button
+            className='px-4 py-2 bg-slate-200 m-4 rounded-lg'
+            onClick={() => setFilteredListOfRestaurant(listOfRestaurant)}
+          >
+            Remove Filters
+          </button>
+        </div>
       </div>
-      <div className='res-container'>
+      <div className='flex flex-wrap'>
         {filteredListOfRestaurant.map((restaurant) => {
           const { id } = restaurant.info;
 
