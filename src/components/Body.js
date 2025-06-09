@@ -37,6 +37,7 @@ const Body = () => {
         <div className='search m-4 p-4'>
           <input
             type='text'
+            data-testid='searchInput'
             className='border border-solid border-black'
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
@@ -66,7 +67,7 @@ const Body = () => {
               setFilteredListOfRestaurant(filteredList);
             }}
           >
-            Top Rated Restaurant
+            Top Rated Restaurants
           </button>
           <button
             className='px-4 py-2 bg-slate-200 m-4 rounded-lg'
